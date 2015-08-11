@@ -6,3 +6,4 @@ fi
 apt-get install -y npm
 chown -R $(whoami) /usr/local
 npm install -g npm
+pgrep node | xargs kill
