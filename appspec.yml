@@ -19,7 +19,7 @@ hooks:
   BeforeInstall:
     - location: deploy_hooks/beforeinstall
       timeout: 30000
-      runas: ubuntu
+      runas: root
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
 #   AfterInstall:
@@ -34,7 +34,7 @@ hooks:
   ApplicationStart:
     - location: deploy_hooks/start
       timeout: 30000
-      runas: ubuntu
+      runas: root
 # During the ValidateService deployment lifecycle event, run the commands 
 #   in the script specified in "location".
 #   ValidateService:
